@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="CVOL_widgetContainer">
+        <!-- <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"
+            role="tablist">
+            <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0"
+                aria-controls="tab-1" aria-labelledby="ui-id-1" aria-selected="true" aria-expanded="true"><a
+                    href="#tab-1" class="ui-tabs-anchor" role="presentation" tabindex="-1"
+                    id="ui-id-1">Cuisine</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-2"
+                aria-labelledby="ui-id-2" aria-selected="false" aria-expanded="false"><a href="#tab-2"
+                    class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Chambre</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-3"
+                aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="#tab-3"
+                    class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Salon / Salle à
+                    manger</a></li>
+            <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tab-4"
+                aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false"><a href="#tab-4"
+                    class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Autres</a></li>
+        </ul> -->
+        <!-- <div id="tab-1" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1"
+                    role="tabpanel" aria-hidden="false">
+                    <strong>Cuisine</strong>
+                    <span class="element frigo-am" data-volume="2"><span class="texte-objet">Réfrigérateur
+                            américain</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="3"><span id="categoryQuantity_3">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="3"></div>
+                    </span>
+                    <span class="element frigo-top" data-volume="3"><span class="texte-objet">Réfrigérateur top</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="4"><span id="categoryQuantity_4">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="4"></div>
+                    </span>
+                    <span class="element four" data-volume="0.5"><span class="texte-objet">Four</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="5"><span id="categoryQuantity_5">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="5"></div>
+                    </span>
+                    <span class="element microonde" data-volume="0.3"><span class="texte-objet">Micro-ondes</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="6"><span id="categoryQuantity_6">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="6"></div>
+                    </span>
+                    <span class="element gaziniere" data-volume="0.5"><span class="texte-objet">Gazinière</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="7"><span id="categoryQuantity_7">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="7"></div>
+                    </span>
+                    <span class="element plaque-cuisson" data-volume="0.3"><span class="texte-objet">Plaque
+                            cuisson</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="8"><span id="categoryQuantity_8">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="8"></div>
+                    </span>
+                    <span class="element meuble-haut-1" data-volume="0.5"><span class="texte-objet">Meuble haut ou bas
+                            cuisine (1 porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="9"><span id="categoryQuantity_9">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="9"></div>
+                    </span>
+                    <span class="element meuble-haut-2" data-volume="1"><span class="texte-objet">Meuble haut ou bas
+                            cuisine (2 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="10"><span id="categoryQuantity_10">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="10"></div>
+                    </span>
+                    <span class="element meuble-haut-3" data-volume="1.5"><span class="texte-objet">Meuble haut ou bas
+                            cuisine (3 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="11"><span id="categoryQuantity_11">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="11"></div>
+                    </span>
+                    <span class="element meuble-haut-4" data-volume="2"><span class="texte-objet">Meuble haut ou bas
+                            cuisine (4 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="12"><span id="categoryQuantity_12">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="12"></div>
+                    </span>
+                    <span class="element s-lavabo" data-volume="0.8"><span class="texte-objet">Sous-lavabo</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="13"><span id="categoryQuantity_13">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="13"></div>
+                    </span>
+                    <span class="element vaisselier-1" data-volume="1"><span class="texte-objet">Vaisselier (1
+                            porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="14"><span id="categoryQuantity_14">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="14"></div>
+                    </span>
+                    <span class="element vaisselier-2" data-volume="1.5"><span class="texte-objet">Vaisselier (2
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="15"><span id="categoryQuantity_15">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="15"></div>
+                    </span>
+                    <span class="element vaisselier-3" data-volume="2"><span class="texte-objet">Vaisselier (3
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="16"><span id="categoryQuantity_16">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="16"></div>
+                    </span>
+                    <span class="element vaisselier-4" data-volume="2.5"><span class="texte-objet">Vaisselier (4
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="17"><span id="categoryQuantity_17">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="17"></div>
+                    </span>
+                    <span class="element petite-lampe" data-volume="0.2"><span class="texte-objet">Petite lampe</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="18"><span id="categoryQuantity_18">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="18"></div>
+                    </span>
+                    <span class="element halogene" data-volume="0.25"><span class="texte-objet">Halogène</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="19"><span id="categoryQuantity_19">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="19"></div>
+                    </span>
+                    <span class="element placard" data-volume="1"><span class="texte-objet">Placard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="20"><span id="categoryQuantity_20">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="20"></div>
+                    </span>
+                    <span class="element etagere" data-volume="0.3"><span class="texte-objet">Etagère</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="21"><span id="categoryQuantity_21">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="21"></div>
+                    </span>
+                    <span class="element table" data-volume="1"><span class="texte-objet">Table</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="22"><span id="categoryQuantity_22">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="22"></div>
+                    </span>
+                    <span class="element chaise" data-volume="0.3"><span class="texte-objet">Chaise</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="23"><span id="categoryQuantity_23">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="23"></div>
+                    </span>
+                    <span class="element lave-linge" data-volume="0.5"><span class="texte-objet">Lave-linge</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="24"><span id="categoryQuantity_24">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="24"></div>
+                    </span>
+                    <span class="element lave-vaisselle" data-volume="0.5"><span
+                            class="texte-objet">Lave-vaisselle</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="25"><span id="categoryQuantity_25">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="25"></div>
+                    </span>
+                    <span class="element congelateur-p" data-volume="0.5"><span class="texte-objet">Congélateur
+                            coffre(petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="26"><span id="categoryQuantity_26">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="26"></div>
+                    </span>
+                    <span class="element congelateur-m" data-volume="0.75"><span class="texte-objet">Congélateur
+                            coffre(moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="27"><span id="categoryQuantity_27">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="27"></div>
+                    </span>
+                    <span class="element congelateur-g" data-volume="1"><span class="texte-objet">Congélateur
+                            coffre(grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="28"><span id="categoryQuantity_28">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="28"></div>
+                    </span>
+                    <span class="element seche-linge" data-volume="0.5"><span class="texte-objet">Sèche-linge</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="29"><span id="categoryQuantity_29">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="29"></div>
+                    </span>
+                    <span class="element plante-p" data-volume="0.25"><span class="texte-objet">Plante (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="30"><span id="categoryQuantity_30">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="30"></div>
+                    </span>
+                    <span class="element plante-m" data-volume="0.5"><span class="texte-objet">Plante (moyenne)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="31"><span id="categoryQuantity_31">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="31"></div>
+                    </span>
+                    <span class="element plante-g" data-volume="1"><span class="texte-objet">Plante (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="32"><span id="categoryQuantity_32">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="32"></div>
+                    </span>
+                    <span class="element tableau-p" data-volume="0.1"><span class="texte-objet">Tableau (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="33"><span id="categoryQuantity_33">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="33"></div>
+                    </span>
+                    <span class="element tableau-m" data-volume="0.15"><span class="texte-objet">Tableau (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="34"><span id="categoryQuantity_34">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="34"></div>
+                    </span>
+                    <span class="element tableau-g" data-volume="0.25"><span class="texte-objet">Tableau (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="35"><span id="categoryQuantity_35">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="35"></div>
+                    </span>
+                    <span class="element carton" data-volume="0.1"><span class="texte-objet">Carton standard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="36"><span id="categoryQuantity_36">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="36"></div>
+                    </span>
+                    <span class="element tv" data-volume="0.25"><span class="texte-objet">Télévision</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="37"><span id="categoryQuantity_37">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="37"></div>
+                    </span>
+                    <span class="element tapis-p" data-volume="0.15"><span class="texte-objet">Tapis (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="38"><span id="categoryQuantity_38">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="38"></div>
+                    </span>
+                    <span class="element tapis-m" data-volume="0.5"><span class="texte-objet">Tapis (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="39"><span id="categoryQuantity_39">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="39"></div>
+                    </span>
+                    <span class="element tapis-g" data-volume="0.75"><span class="texte-objet">Tapis (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="40"><span id="categoryQuantity_40">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="40"></div>
+                    </span>
+                </div>
+                <div id="tab-2" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2"
+                    role="tabpanel" aria-hidden="true" style="display: none;">
+                    <strong>Chambre</strong>
+                    <span class="element lit-bebe" data-volume="1.2"><span class="texte-objet">Lit Bébé</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="41"><span id="categoryQuantity_41">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="41"></div>
+                    </span>
+                    <span class="element lit-1" data-volume="1.2"><span class="texte-objet">Lit (1 place)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="42"><span id="categoryQuantity_42">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="42"></div>
+                    </span>
+                    <span class="element lit-2" data-volume="1.5"><span class="texte-objet">Lit (2 places)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="43"><span id="categoryQuantity_43">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="43"></div>
+                    </span>
+                    <span class="element lit-superpose" data-volume="2.5"><span class="texte-objet">Lit superposé</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="44"><span id="categoryQuantity_44">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="44"></div>
+                    </span>
+                    <span class="element table-chevet" data-volume="0.3"><span class="texte-objet">Table de
+                            chevet</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="45"><span id="categoryQuantity_45">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="45"></div>
+                    </span>
+                    <span class="element armoire-1" data-volume="0.5"><span class="texte-objet">Armoire (1 porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="46"><span id="categoryQuantity_46">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="46"></div>
+                    </span>
+                    <span class="element armoire-2" data-volume="1"><span class="texte-objet">Armoire (2 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="47"><span id="categoryQuantity_47">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="47"></div>
+                    </span>
+                    <span class="element armoire-3" data-volume="1.5"><span class="texte-objet">Armoire (3
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="48"><span id="categoryQuantity_48">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="48"></div>
+                    </span>
+                    <span class="element armoire-4" data-volume="2"><span class="texte-objet">Armoire (4 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="49"><span id="categoryQuantity_49">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="49"></div>
+                    </span>
+                    <span class="element commode" data-volume="0.5"><span class="texte-objet">Commode</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="50"><span id="categoryQuantity_50">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="50"></div>
+                    </span>
+                    <span class="element coiffeuse" data-volume="1.5"><span class="texte-objet">Coiffeuse</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="51"><span id="categoryQuantity_51">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="51"></div>
+                    </span>
+                    <span class="element bonnetiere" data-volume="1"><span class="texte-objet">Bonnetière</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="52"><span id="categoryQuantity_52">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="52"></div>
+                    </span>
+                    <span class="element fauteuil" data-volume="1"><span class="texte-objet">Fauteuil</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="53"><span id="categoryQuantity_53">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="53"></div>
+                    </span>
+                    <span class="element abat-jour" data-volume="0.1"><span class="texte-objet">Abat-jour</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="54"><span id="categoryQuantity_54">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="54"></div>
+                    </span>
+                    <span class="element petite-lampe" data-volume="0.2"><span class="texte-objet">Petite lampe</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="55"><span id="categoryQuantity_55">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="55"></div>
+                    </span>
+                    <span class="element halogene" data-volume="0.25"><span class="texte-objet">Halogène</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="56"><span id="categoryQuantity_56">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="56"></div>
+                    </span>
+                    <span class="element placard" data-volume="1"><span class="texte-objet">Placard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="57"><span id="categoryQuantity_57">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="57"></div>
+                    </span>
+                    <span class="element etagere" data-volume="0.3"><span class="texte-objet">Etagère</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="58"><span id="categoryQuantity_58">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="58"></div>
+                    </span>
+                    <span class="element bibliotheque-1" data-volume="0.5"><span class="texte-objet">Bibliothèque (1
+                            porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="59"><span id="categoryQuantity_59">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="59"></div>
+                    </span>
+                    <span class="element bibliotheque-2" data-volume="1"><span class="texte-objet">Bibliothèque (2
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="60"><span id="categoryQuantity_60">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="60"></div>
+                    </span>
+                    <span class="element bibliotheque-3" data-volume="1.5"><span class="texte-objet">Bibliothèque (3
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="61"><span id="categoryQuantity_61">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="61"></div>
+                    </span>
+                    <span class="element bibliotheque-4" data-volume="2"><span class="texte-objet">Bibliothèque (4
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="62"><span id="categoryQuantity_62">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="62"></div>
+                    </span>
+                    <span class="element chaise" data-volume="0.33"><span class="texte-objet">Chaise</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="63"><span id="categoryQuantity_63">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="63"></div>
+                    </span>
+                    <span class="element meuble-tv" data-volume="0.7"><span class="texte-objet">Meuble Tv</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="64"><span id="categoryQuantity_64">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="64"></div>
+                    </span>
+                    <span class="element tv" data-volume="0.25"><span class="texte-objet">Télévision</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="65"><span id="categoryQuantity_65">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="65"></div>
+                    </span>
+                    <span class="element petit-bureau" data-volume="1"><span class="texte-objet">Petit bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="66"><span id="categoryQuantity_66">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="66"></div>
+                    </span>
+                    <span class="element bureau" data-volume="1.5"><span class="texte-objet">Bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="67"><span id="categoryQuantity_67">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="67"></div>
+                    </span>
+                    <span class="element ordinateur" data-volume="0.1"><span class="texte-objet">Ordinateur</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="68"><span id="categoryQuantity_68">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="68"></div>
+                    </span>
+                    <span class="element imprimante" data-volume="0.3"><span class="texte-objet">Imprimante</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="69"><span id="categoryQuantity_69">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="69"></div>
+                    </span>
+                    <span class="element hifi" data-volume="0.3"><span class="texte-objet">Hifi</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="70"><span id="categoryQuantity_70">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="70"></div>
+                    </span>
+                    <span class="element plante-p" data-volume="0.25"><span class="texte-objet">Plante (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="71"><span id="categoryQuantity_71">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="71"></div>
+                    </span>
+                    <span class="element plante-m" data-volume="0.5"><span class="texte-objet">Plante (moyenne)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="72"><span id="categoryQuantity_72">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="72"></div>
+                    </span>
+                    <span class="element plante-g" data-volume="1"><span class="texte-objet">Plante (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="73"><span id="categoryQuantity_73">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="73"></div>
+                    </span>
+                    <span class="element tableau-p" data-volume="0.1"><span class="texte-objet">Tableau (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="74"><span id="categoryQuantity_74">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="74"></div>
+                    </span>
+                    <span class="element tableau-m" data-volume="0.15"><span class="texte-objet">Tableau (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="75"><span id="categoryQuantity_75">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="75"></div>
+                    </span>
+                    <span class="element tableau-g" data-volume="0.25"><span class="texte-objet">Tableau (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="76"><span id="categoryQuantity_76">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="76"></div>
+                    </span>
+                    <span class="element carton-penderie" data-volume="0.5"><span class="texte-objet">Carton
+                            penderie</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="77"><span id="categoryQuantity_77">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="77"></div>
+                    </span>
+                    <span class="element carton" data-volume="0.1"><span class="texte-objet">Carton standard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="78"><span id="categoryQuantity_78">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="78"></div>
+                    </span>
+                    <span class="element contenu-penderie-1" data-volume="0.5"><span class="texte-objet">Contenu
+                            penderie (1 porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="79"><span id="categoryQuantity_79">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="79"></div>
+                    </span>
+                    <span class="element contenu-penderie-2" data-volume="1"><span class="texte-objet">Contenu penderie
+                            (2 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="80"><span id="categoryQuantity_80">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="80"></div>
+                    </span>
+                    <span class="element contenu-penderie-3" data-volume="1.5"><span class="texte-objet">Contenu
+                            penderie (3 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="81"><span id="categoryQuantity_81">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="81"></div>
+                    </span>
+                    <span class="element contenu-penderie-4" data-volume="2"><span class="texte-objet">Contenu penderie
+                            (4 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="82"><span id="categoryQuantity_82">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="82"></div>
+                    </span>
+                    <span class="element contenu-placard-1" data-volume="0.5"><span class="texte-objet">Contenu placard
+                            (1 porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="83"><span id="categoryQuantity_83">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="83"></div>
+                    </span>
+                    <span class="element contenu-placard-2" data-volume="1"><span class="texte-objet">Contenu placard (2
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="84"><span id="categoryQuantity_84">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="84"></div>
+                    </span>
+                    <span class="element contenu-placard-3" data-volume="1.5"><span class="texte-objet">Contenu placard
+                            (3 portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="85"><span id="categoryQuantity_85">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="85"></div>
+                    </span>
+                    <span class="element contenu-placard-4" data-volume="2"><span class="texte-objet">Contenu placard (4
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="86"><span id="categoryQuantity_86">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="86"></div>
+                    </span>
+                    <span class="element coffre-jouets-p" data-volume="0.25"><span class="texte-objet">Coffre à jouets
+                            (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="87"><span id="categoryQuantity_87">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="87"></div>
+                    </span>
+                    <span class="element coffre-jouets-m" data-volume="0.5"><span class="texte-objet">Coffre à jouets
+                            (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="88"><span id="categoryQuantity_88">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="88"></div>
+                    </span>
+                    <span class="element coffre-jouets-g" data-volume="0.75"><span class="texte-objet">Coffre à jouets
+                            (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="89"><span id="categoryQuantity_89">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="89"></div>
+                    </span>
+                    <span class="element table-repasser" data-volume="0.15"><span class="texte-objet">Table à
+                            repasser</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="90"><span id="categoryQuantity_90">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="90"></div>
+                    </span>
+                </div>
+                <div id="tab-3" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3"
+                    role="tabpanel" aria-hidden="true" style="display: none;">
+                    <strong>Salon / Salle à manger</strong>
+                    <span class="element canape-2" data-volume="2"><span class="texte-objet">Canapé (2 places)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="91"><span id="categoryQuantity_91">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="91"></div>
+                    </span>
+                    <span class="element canape-3" data-volume="2.5"><span class="texte-objet">Canapé (3 places)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="92"><span id="categoryQuantity_92">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="92"></div>
+                    </span>
+                    <span class="element canape-angle" data-volume="3"><span class="texte-objet">Canapé d'angle</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="93"><span id="categoryQuantity_93">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="93"></div>
+                    </span>
+                    <span class="element fauteuil" data-volume="1"><span class="texte-objet">Fauteuil</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="94"><span id="categoryQuantity_94">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="94"></div>
+                    </span>
+                    <span class="element abat-jour" data-volume="0.1"><span class="texte-objet">Abat-jour</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="95"><span id="categoryQuantity_95">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="95"></div>
+                    </span>
+                    <span class="element petite-lampe" data-volume="0.2"><span class="texte-objet">Petite lampe</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="96"><span id="categoryQuantity_96">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="96"></div>
+                    </span>
+                    <span class="element halogene" data-volume="0.25"><span class="texte-objet">Halogène</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="97"><span id="categoryQuantity_97">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="97"></div>
+                    </span>
+                    <span class="element placard" data-volume="2"><span class="texte-objet">Placard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="98"><span id="categoryQuantity_98">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="98"></div>
+                    </span>
+                    <span class="element etagere" data-volume="0.3"><span class="texte-objet">Etagère</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="99"><span id="categoryQuantity_99">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="99"></div>
+                    </span>
+                    <span class="element bibliotheque-1" data-volume="0.5"><span class="texte-objet">Bibliothèque (1
+                            porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="100"><span id="categoryQuantity_100">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="100"></div>
+                    </span>
+                    <span class="element bibliotheque-2" data-volume="1"><span class="texte-objet">Bibliothèque (2
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="101"><span id="categoryQuantity_101">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="101"></div>
+                    </span>
+                    <span class="element bibliotheque-3" data-volume="1.5"><span class="texte-objet">Bibliothèque (3
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="102"><span id="categoryQuantity_102">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="102"></div>
+                    </span>
+                    <span class="element bibliotheque-4" data-volume="2"><span class="texte-objet">Bibliothèque (4
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="103"><span id="categoryQuantity_103">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="103"></div>
+                    </span>
+                    <span class="element meuble-living-1" data-volume="0.5"><span class="texte-objet">Meuble living (1
+                            porte)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="104"><span id="categoryQuantity_104">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="104"></div>
+                    </span>
+                    <span class="element meuble-living-2" data-volume="1"><span class="texte-objet">Meuble living (2
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="105"><span id="categoryQuantity_105">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="105"></div>
+                    </span>
+                    <span class="element meuble-living-3" data-volume="1.5"><span class="texte-objet">Meuble living (3
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="106"><span id="categoryQuantity_106">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="106"></div>
+                    </span>
+                    <span class="element meuble-living-4" data-volume="2"><span class="texte-objet">Meuble living (4
+                            portes)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="107"><span id="categoryQuantity_107">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="107"></div>
+                    </span>
+                    <span class="element table-basse" data-volume="0.5"><span class="texte-objet">Table basse</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="108"><span id="categoryQuantity_108">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="108"></div>
+                    </span>
+                    <span class="element gueridon" data-volume="0.3"><span class="texte-objet">Guéridon</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="109"><span id="categoryQuantity_109">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="109"></div>
+                    </span>
+                    <span class="element table-p" data-volume="0.5"><span class="texte-objet">Table (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="110"><span id="categoryQuantity_110">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="110"></div>
+                    </span>
+                    <span class="element table-m" data-volume="0.75"><span class="texte-objet">Table (moyenne)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="111"><span id="categoryQuantity_111">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="111"></div>
+                    </span>
+                    <span class="element table-g" data-volume="1"><span class="texte-objet">Table (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="112"><span id="categoryQuantity_112">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="112"></div>
+                    </span>
+                    <span class="element chaise" data-volume="0.33"><span class="texte-objet">Chaise</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="113"><span id="categoryQuantity_113">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="113"></div>
+                    </span>
+                    <span class="element meuble-tv" data-volume="0.7"><span class="texte-objet">Meuble Tv</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="114"><span id="categoryQuantity_114">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="114"></div>
+                    </span>
+                    <span class="element tv" data-volume="0.25"><span class="texte-objet">Télévision</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="115"><span id="categoryQuantity_115">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="115"></div>
+                    </span>
+                    <span class="element petit-bureau" data-volume="1"><span class="texte-objet">Petit bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="116"><span id="categoryQuantity_116">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="116"></div>
+                    </span>
+                    <span class="element bureau" data-volume="1.5"><span class="texte-objet">Bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="117"><span id="categoryQuantity_117">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="117"></div>
+                    </span>
+                    <span class="element ordinateur" data-volume="0.1"><span class="texte-objet">Ordinateur</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="118"><span id="categoryQuantity_118">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="118"></div>
+                    </span>
+                    <span class="element imprimante" data-volume="0.3"><span class="texte-objet">Imprimante</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="119"><span id="categoryQuantity_119">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="119"></div>
+                    </span>
+                    <span class="element hifi" data-volume="0.3"><span class="texte-objet">Hifi</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="120"><span id="categoryQuantity_120">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="120"></div>
+                    </span>
+                    <span class="element piano-demi" data-volume="2"><span class="texte-objet">Piano demi queue</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="121"><span id="categoryQuantity_121">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="121"></div>
+                    </span>
+                    <span class="element piano-queue" data-volume="2.5"><span class="texte-objet">Piano à queue</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="122"><span id="categoryQuantity_122">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="122"></div>
+                    </span>
+                    <span class="element piano-droit" data-volume="1.5"><span class="texte-objet">Piano droit</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="123"><span id="categoryQuantity_123">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="123"></div>
+                    </span>
+                    <span class="element plante-p" data-volume="0.25"><span class="texte-objet">Plante (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="124"><span id="categoryQuantity_124">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="124"></div>
+                    </span>
+                    <span class="element plante-m" data-volume="0.5"><span class="texte-objet">Plante (moyenne)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="125"><span id="categoryQuantity_125">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="125"></div>
+                    </span>
+                    <span class="element plante-g" data-volume="1"><span class="texte-objet">Plante (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="126"><span id="categoryQuantity_126">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="126"></div>
+                    </span>
+                    <span class="element tableau-p" data-volume="0.1"><span class="texte-objet">Tableau (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="127"><span id="categoryQuantity_127">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="127"></div>
+                    </span>
+                    <span class="element tableau-m" data-volume="0.15"><span class="texte-objet">Tableau (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="128"><span id="categoryQuantity_128">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="128"></div>
+                    </span>
+                    <span class="element tableau-g" data-volume="0.25"><span class="texte-objet">Tableau (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="129"><span id="categoryQuantity_129">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="129"></div>
+                    </span>
+                    <span class="element carton" data-volume="0.1"><span class="texte-objet">Carton standard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="130"><span id="categoryQuantity_130">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="130"></div>
+                    </span>
+                    <span class="element tapis-p" data-volume="0.15"><span class="texte-objet">Tapis (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="131"><span id="categoryQuantity_131">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="131"></div>
+                    </span>
+                    <span class="element tapis-m" data-volume="0.5"><span class="texte-objet">Tapis (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="132"><span id="categoryQuantity_132">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="132"></div>
+                    </span>
+                    <span class="element tapis-g" data-volume="0.75"><span class="texte-objet">Tapis (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="133"><span id="categoryQuantity_133">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="133"></div>
+                    </span>
+                    <span class="element porte-manteau" data-volume="0.3"><span
+                            class="texte-objet">Porte-manteaux</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="134"><span id="categoryQuantity_134">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="134"></div>
+                    </span>
+                </div>
+                <div id="tab-4" class="tab ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4"
+                    role="tabpanel" aria-hidden="true" style="display: none;">
+                    <strong>Autres</strong>
+                    <span class="element aspirateur" data-volume="0.3"><span class="texte-objet">Aspirateur</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="135"><span id="categoryQuantity_135">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="135"></div>
+                    </span>
+                    <span class="element etabli" data-volume="1"><span class="texte-objet">Etabli</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="136"><span id="categoryQuantity_136">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="136"></div>
+                    </span>
+                    <span class="element outils-p" data-volume="0.25"><span class="texte-objet">Lot doutils
+                            (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="137"><span id="categoryQuantity_137">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="137"></div>
+                    </span>
+                    <span class="element outils-m" data-volume="0.75"><span class="texte-objet">Lot doutils
+                            (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="138"><span id="categoryQuantity_138">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="138"></div>
+                    </span>
+                    <span class="element outils-g" data-volume="1"><span class="texte-objet">Lot doutils (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="139"><span id="categoryQuantity_139">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="139"></div>
+                    </span>
+                    <span class="element parasol" data-volume="0.5"><span class="texte-objet">Parasol</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="140"><span id="categoryQuantity_140">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="140"></div>
+                    </span>
+                    <span class="element poussette" data-volume="0.5"><span class="texte-objet">Poussette</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="141"><span id="categoryQuantity_141">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="141"></div>
+                    </span>
+                    <span class="element scooter" data-volume="0.5"><span class="texte-objet">Scooter</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="142"><span id="categoryQuantity_142">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="142"></div>
+                    </span>
+                    <span class="element tondeuse" data-volume="0.5"><span class="texte-objet">Tondeuse</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="143"><span id="categoryQuantity_143">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="143"></div>
+                    </span>
+                    <span class="element brouette" data-volume="0.5"><span class="texte-objet">Brouette</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="144"><span id="categoryQuantity_144">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="144"></div>
+                    </span>
+                    <span class="element transat" data-volume="0.5"><span class="texte-objet">Transat</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="145"><span id="categoryQuantity_145">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="145"></div>
+                    </span>
+                    <span class="element velo" data-volume="0.25"><span class="texte-objet">Vélo</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="146"><span id="categoryQuantity_146">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="146"></div>
+                    </span>
+                    <span class="element petite-lampe" data-volume="0.2"><span class="texte-objet">Petite lampe</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="147"><span id="categoryQuantity_147">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="147"></div>
+                    </span>
+                    <span class="element halogene" data-volume="0.25"><span class="texte-objet">Halogène</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="148"><span id="categoryQuantity_148">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="148"></div>
+                    </span>
+                    <span class="element placard" data-volume="1"><span class="texte-objet">Placard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="149"><span id="categoryQuantity_149">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="149"></div>
+                    </span>
+                    <span class="element etagere" data-volume="0.3"><span class="texte-objet">Etagère</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="150"><span id="categoryQuantity_150">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="150"></div>
+                    </span>
+                    <span class="element chaise" data-volume="0.33"><span class="texte-objet">Chaise</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="151"><span id="categoryQuantity_151">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="151"></div>
+                    </span>
+                    <span class="element petit-bureau" data-volume="1"><span class="texte-objet">Petit bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="152"><span id="categoryQuantity_152">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="152"></div>
+                    </span>
+                    <span class="element bureau" data-volume="1.5"><span class="texte-objet">Bureau</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="153"><span id="categoryQuantity_153">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="153"></div>
+                    </span>
+                    <span class="element ordinateur" data-volume="0.1"><span class="texte-objet">Ordinateur</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="154"><span id="categoryQuantity_154">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="154"></div>
+                    </span>
+                    <span class="element imprimante" data-volume="0.3"><span class="texte-objet">Imprimante</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="155"><span id="categoryQuantity_155">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="155"></div>
+                    </span>
+                    <span class="element plante-p" data-volume="0.25"><span class="texte-objet">Plante (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="156"><span id="categoryQuantity_156">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="156"></div>
+                    </span>
+                    <span class="element plante-m" data-volume="0.5"><span class="texte-objet">Plante (moyenne)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="157"><span id="categoryQuantity_157">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="157"></div>
+                    </span>
+                    <span class="element plante-g" data-volume="1"><span class="texte-objet">Plante (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="158"><span id="categoryQuantity_158">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="158"></div>
+                    </span>
+                    <span class="element tableau-p" data-volume="0.1"><span class="texte-objet">Tableau (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="159"><span id="categoryQuantity_159">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="159"></div>
+                    </span>
+                    <span class="element tableau-m" data-volume="0.15"><span class="texte-objet">Tableau (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="160"><span id="categoryQuantity_160">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="160"></div>
+                    </span>
+                    <span class="element tableau-g" data-volume="0.25"><span class="texte-objet">Tableau (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="161"><span id="categoryQuantity_161">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="161"></div>
+                    </span>
+                    <span class="element carton" data-volume="0.1"><span class="texte-objet">Carton standard</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="162"><span id="categoryQuantity_162">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="162"></div>
+                    </span>
+                    <span class="element table-jardin-p" data-volume="0.25"><span class="texte-objet">Table de jardin
+                            (petite)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="163"><span id="categoryQuantity_163">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="163"></div>
+                    </span>
+                    <span class="element table-jardin-m" data-volume="0.5"><span class="texte-objet">Table de jardin
+                            (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="164"><span id="categoryQuantity_164">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="164"></div>
+                    </span>
+                    <span class="element table-jardin-g" data-volume="0.75"><span class="texte-objet">Table de jardin
+                            (grande)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="165"><span id="categoryQuantity_165">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="165"></div>
+                    </span>
+                    <span class="element table-repasser" data-volume="0.15"><span class="texte-objet">Table à
+                            repasser</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="166"><span id="categoryQuantity_166">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="166"></div>
+                    </span>
+                    <span class="element tracteur-tondeuse" data-volume="1.5"><span class="texte-objet">Tracteur
+                            tondeuse</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="167"><span id="categoryQuantity_167">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="167"></div>
+                    </span>
+                    <span class="element outils-jardin-p" data-volume="0.5"><span class="texte-objet">Outils de jardin
+                            (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="168"><span id="categoryQuantity_168">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="168"></div>
+                    </span>
+                    <span class="element outils-jardin-m" data-volume="0.75"><span class="texte-objet">Outils de jardin
+                            (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="169"><span id="categoryQuantity_169">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="169"></div>
+                    </span>
+                    <span class="element outils-jardin-g" data-volume="1"><span class="texte-objet">Outils de jardin
+                            (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="170"><span id="categoryQuantity_170">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="170"></div>
+                    </span>
+                    <span class="element meuble-chaussures-p" data-volume="0.25"><span class="texte-objet">Meuble à
+                            chaussures (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="171"><span id="categoryQuantity_171">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="171"></div>
+                    </span>
+                    <span class="element meuble-chaussures-m" data-volume="0.5"><span class="texte-objet">Meuble à
+                            chaussures (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="172"><span id="categoryQuantity_172">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="172"></div>
+                    </span>
+                    <span class="element meuble-chaussures-g" data-volume="0.75"><span class="texte-objet">Meuble à
+                            chaussures (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="173"><span id="categoryQuantity_173">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="173"></div>
+                    </span>
+                    <span class="element table-ping-pong" data-volume="1.5"><span class="texte-objet">Table de
+                            Ping-pong</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="174"><span id="categoryQuantity_174">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="174"></div>
+                    </span>
+                    <span class="element barbecue-p" data-volume="0.25"><span class="texte-objet">Barbecue
+                            (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="175"><span id="categoryQuantity_175">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="175"></div>
+                    </span>
+                    <span class="element barbecue-m" data-volume="0.5"><span class="texte-objet">Barbecue (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="176"><span id="categoryQuantity_176">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="176"></div>
+                    </span>
+                    <span class="element barbecue-g" data-volume="0.75"><span class="texte-objet">Barbecue
+                            (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="177"><span id="categoryQuantity_177">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="177"></div>
+                    </span>
+                    <span class="element congelateur-p" data-volume="0.5"><span class="texte-objet">Congélateur coffre
+                            (petit)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="178"><span id="categoryQuantity_178">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="178"></div>
+                    </span>
+                    <span class="element congelateur-m" data-volume="0.75"><span class="texte-objet">Congélateur coffre
+                            (moyen)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="179"><span id="categoryQuantity_179">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="179"></div>
+                    </span>
+                    <span class="element congelateur-g" data-volume="1"><span class="texte-objet">Congélateur coffre
+                            (grand)</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="180"><span id="categoryQuantity_180">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="180"></div>
+                    </span>
+                    <span class="element paniere-linge" data-volume="0.3"><span class="texte-objet">Panière à
+                            linge</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="181"><span id="categoryQuantity_181">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="181"></div>
+                    </span>
+                    <span class="element frigo" data-volume="1"><span class="texte-objet">Réfrigérateur</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="182"><span id="categoryQuantity_182">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="182"></div>
+                    </span>
+                    <span class="element frigo-am" data-volume="2"><span class="texte-objet">Réfrigérateur
+                            américain</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="183"><span id="categoryQuantity_183">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="183"></div>
+                    </span>
+                    <span class="element frigo-top" data-volume="3"><span class="texte-objet">Réfrigérateur top</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="184"><span id="categoryQuantity_184">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="184"></div>
+                    </span>
+                    <span class="element gaziniere" data-volume="0.5"><span class="texte-objet">Gazinière</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="185"><span id="categoryQuantity_185">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="185"></div>
+                    </span>
+                    <span class="element lave-linge" data-volume="0.5"><span class="texte-objet">Lave-linge</span>
+                        <div class="elem"><input class="less" type="button" name="removeQuantity" value="-"
+                                data-i="186"><span id="categoryQuantity_186">0</span><input class="more" type="button"
+                                name="addQuantity" value="+" data-i="186"></div>
+                    </span>
+                </div> -->
+
+        <div id="CVOL_objectsContainer">
+
+        </div>
+
+        <div id="CVOL_recapContainer">
+            <div>
+                <div id="CVOL_listTitle">
+                    Votre liste est vide
+                </div>
+                <div>
+                    <span id="CVOL_totalObject">0</span> <span id="CVOL_textObjectCount">Objet</span>
+                </div>
+                <ul id="CVOL_listOfObjects">
+
+                </ul>
+            </div>
+            <div>
+                <div>Avec un total de</div>
+                <div>
+                    ~ <span id="CVOL_totalVol">0</span> m³
+                </div>
+            </div>
+        </div>
+
+        <style>
+            :root {
+                --principal_color: #6dab3c;
+                --secondary_color: #e2e6df;
+                --nbElementPerCol: 8;
+                --fontFamily: Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+
+                --btn-text-direction: ltr;
+                --btn-border-r-color: var(--btn-border-color);
+                --btn-border-l-color: var(--btn-border-color);
+                --btn-border-b-width: var(--btn-border-width);
+                --btn-border-width: 0px;
+                --btn-border-radius: 0px;
+                --btn-border-t-width: var(--btn-border-width);
+                --btn-border-tl-radius: var(--btn-border-radius);
+                --btn-border-br-radius: var(--btn-border-radius);
+                --btn-border-bl-radius: var(--btn-border-radius);
+                --btn-bg-color: rgb(52, 178, 192);
+                --btn-border-color: rgba(0, 0, 0, 0);
+                --btn-border-tr-radius: var(--btn-border-radius);
+                --btn-border-r-width: var(--btn-border-width);
+                --btn-border-b-color: var(--btn-border-color);
+                --btn-border-l-width: var(--btn-border-width);
+                --btn-border-t-color: var(--btn-border-color);
+                --btn-text-align: center;
+                --btn-text-color: rgb(255, 255, 255);
+                --btn-text-decoration: none;
+                --btn-text-font-weight: 400;
+                --btn-text-font-family: Muli;
+                --btn-icon-color: rgb(247, 247, 247);
+                --btn-icon-fill: rgb(247, 247, 247);
+                --btn-icon-wrpr-display: none;
+                --btn-hover-border-b-color: var(--btn-hover-border-color);
+                --btn-hover-bg: rgb(122, 222, 233);
+                --btn-hover-border-t-color: var(--btn-hover-border-color);
+                --btn-hover-border-r-color: var(--btn-hover-border-color);
+                --btn-hover-border-l-color: var(--btn-hover-border-color);
+                --btn-hover-border-color: var(--btn-border-color);
+                --btn-hover-text-color: var(--btn-text-color);
+                --btn-hover-text-font-weight: var(--btn-text-font-weight);
+                --btn-hover-text-decoration: var(--btn-text-decoration);
+                --btn-hover-text-font-style: var(--btn-text-font-style);
+                --btn-text-font-size: 16px;
+            }
+
+            #CVOL_widgetContainer {
+                display: flex;
+                width: 100%;
+            }
+
+            #CVOL_recapContainer {
+                width: 20%;
+                min-width: 240px;
+                max-width: 380px;
+                background-color: var(--secondary_color);
+            }
+
+            #CVOL_objectsContainer {
+                display: grid;
+                grid-template-columns: repeat(var(--nbElementPerCol), 1fr);
+                gap: 4px;
+                flex-grow: 1;
+            }
+
+            .CVOL_element {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--secondary_color);
+                align-items: center;
+                justify-content: flex-end;
+                font-family: var(--fontFamily);
+                padding: 88px 8px 8px;
+                background-position: top 12px center;
+                background-repeat: no-repeat;
+                background-size: 64px;
+                gap: 8px;
+            }
+
+            .CVOL_textElement {
+                font-family: var(--fontFamily);
+                text-align: center;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .CVOL_actionsContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .CVOL_actionsContainer .CVOL_quantity {
+                flex-grow: 1;
+                width: 100%;
+                text-align: center;
+                height: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 26px;
+                background-color: var(--btn-text-color);
+                border-color: var(--btn-border-t-color) var(--btn-border-r-color) var(--btn-border-b-color) var(--btn-border-l-color);
+                border-width: var(--btn-border-t-width) var(--btn-border-r-width) var(--btn-border-b-width) var(--btn-border-l-width);
+            }
+            .CVOL_actionsContainer .CVOL_actionBtn {
+                background-color: var(--btn-bg-color);
+                border-color: var(--btn-border-t-color) var(--btn-border-r-color) var(--btn-border-b-color) var(--btn-border-l-color);
+                border-radius: var(--btn-border-radius);
+                border-bottom-left-radius: var(--btn-border-bl-radius);
+                border-bottom-right-radius: var(--btn-border-br-radius);
+                border-top-left-radius: var(--btn-border-tl-radius);
+                border-top-right-radius: var(--btn-border-tr-radius);
+                border-width: var(--btn-border-t-width) var(--btn-border-r-width) var(--btn-border-b-width) var(--btn-border-l-width);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: calc(32px - 6px);
+                height: calc(20px - 6px);
+                padding: 6px;
+                cursor: pointer;
+            }
+            .CVOL_actionsContainer .CVOL_actionBtn:hover {
+                background-color: var(--btn-hover-bg);
+            }
+            .CVOL_actionsContainer .CVOL_actionBtn :is(svg, svg path) {
+                fill: var(--btn-text-color);
+            }
+            .CVOL_actionsContainer .CVOL_actionBtn:hover :is(svg, svg path) {
+                fill: var(--btn-hover-text-color);
+            }
+        </style>
+
+        <script>
+            let totalObjectsDisplay, totalVolDisplay, textObjectCount, listTitle, listOfObjects
+
+            window.onload = () => {
+                totalObjectsDisplay = document.getElementById('CVOL_totalObject')
+                totalVolDisplay = document.getElementById('CVOL_totalVol')
+                textObjectCount = document.getElementById('CVOL_textObjectCount')
+                listTitle = document.getElementById('CVOL_listTitle')
+                listOfObjects = document.getElementById('CVOL_listOfObjects')
+
+                generateObjectCard()
+            }
+
+            const objects = [
+                {
+                    name: 'Réfrégirateur américain',
+                    id: 'frigo-am',
+                    vol: 2,
+                    image: 'https://i.imgur.com/tN1oJp5.png'
+                },{
+                    name: 'Réfrigérateur top',
+                    id: 'frigo-top',
+                    vol: 3,
+                    image: 'https://i.imgur.com/9tBTPHH.png'
+                },{
+                    name: 'Four',
+                    id: 'four',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/Gu6Fchw.png'
+                },{
+                    name: 'Micro-ondes',
+                    id: 'microonde',
+                    vol: 0.3,
+                    image: 'https://i.imgur.com/TKRqohv.png'
+                },{
+                    name: 'Gazinière',
+                    id: 'gaziniere',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/toQSlyA.png'
+                },{
+                    name: 'Plaque cuisson',
+                    id: 'plaque-cuisson',
+                    vol: 0.3,
+                    image: 'https://i.imgur.com/A8VVR11.png'
+                },{
+                    name: 'Meuble haut ou bas cuisine (1 porte)',
+                    id: 'meuble-haut-1',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/4bGhqt9.png'
+                },{
+                    name: 'Meuble haut ou bas cuisine (2 portes)',
+                    id: 'meuble-haut-2',
+                    vol: 1,
+                    image: 'https://i.imgur.com/BZkKVGZ.png'
+                },{
+                    name: 'Meuble haut ou bas cuisine (3 portes)',
+                    id: 'meuble-haut-3',
+                    vol: 1.5,
+                    image: 'https://i.imgur.com/MN9qFCk.png'
+                },{
+                    name: 'Meuble haut ou bas cuisine (4 portes)',
+                    id: 'meuble-haut-4',
+                    vol: 2,
+                    image: 'https://i.imgur.com/mp31Hxl.png'
+                },{
+                    name: 'Sous-lavabo',
+                    id: 's-lavabo',
+                    vol: 0.8,
+                    image: 'https://i.imgur.com/94NqMSm.png'
+                },{
+                    name: 'Vaisselier (1 porte)',
+                    id: 'vaisselier-1',
+                    vol: 1,
+                    image: 'https://i.imgur.com/EoJIKhm.png'
+                },{
+                    name: 'Vaisselier (2 portes)',
+                    id: 'vaisselier-2',
+                    vol: 1.5,
+                    image: 'https://i.imgur.com/EoJIKhm.png'
+                },{
+                    name: 'Vaisselier (3 portes)',
+                    id: 'vaisselier-3',
+                    vol: 2,
+                    image: 'https://i.imgur.com/EoJIKhm.png'
+                },{
+                    name: 'Vaisselier (4 portes)',
+                    id: 'vaisselier-4',
+                    vol: 2.5,
+                    image: 'https://i.imgur.com/EoJIKhm.png'
+                },{
+                    name: 'Petite lampe',
+                    id: 'petite-lampe',
+                    vol: 0.2,
+                    image: 'https://i.imgur.com/uYoGk3M.png'
+                },{
+                    name: 'Halogène',
+                    id: 'halogene',
+                    vol: 0.25,
+                    image: 'https://i.imgur.com/nzMvXsY.png'
+                },{
+                    name: 'Placard',
+                    id: 'placard',
+                    vol: 1,
+                    image: 'https://i.imgur.com/ZUyzhYV.png'
+                },{
+                    name: 'Etagère',
+                    id: 'etagere',
+                    vol: 0.3,
+                    image: 'https://i.imgur.com/29hxr6l.png'
+                },{
+                    name: 'Table',
+                    id: 'table',
+                    vol: 1,
+                    image: 'https://i.imgur.com/jBZhJDj.png'
+                },{
+                    name: 'Chaise',
+                    id: 'chaise',
+                    vol: 1,
+                    image: 'https://i.imgur.com/lKfKZGO.png'
+                },{
+                    name: 'Lave-linge',
+                    id: 'lave-linge',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/W7P2eSG.png'
+                },{
+                    name: 'Lave-vaisselle',
+                    id: 'lave-vaisselle',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/SlceUjo.png'
+                },{
+                    name: 'Congélateur coffre(petit)',
+                    id: 'congelateur-p',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/ypda0Te.png'
+                },{
+                    name: 'Congélateur coffre(moyen)',
+                    id: 'congelateur-m',
+                    vol: 0.75,
+                    image: 'https://i.imgur.com/EON4NHl.png'
+                },{
+                    name: 'Congélateur coffre(grand)',
+                    id: 'congelateur-g',
+                    vol: 1,
+                    image: 'https://i.imgur.com/IQ2lXLj.png'
+                },{
+                    name: 'Sèche-linge',
+                    id: 'seche-linge',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/cPhWqxX.png'
+                },{
+                    name: 'Sèche-linge',
+                    id: 'seche-linge',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/cPhWqxX.png'
+                },{
+                    name: 'Sèche-linge',
+                    id: 'seche-linge',
+                    vol: 0.5,
+                    image: 'https://i.imgur.com/cPhWqxX.png'
+                },
+            ]
+
+            function generateObjectCard() {
+                const objectsContainer = document.getElementById('CVOL_objectsContainer')
+                objects.forEach(el => {
+                    let element = document.createElement('div')
+                    element.className = "CVOL_element"
+                    // element.style.backgroundImage = `url('${el.image}')`
+                    element.style.backgroundImage = `url('https://icon-library.com/images/icon-placeholder/icon-placeholder-14.jpg')`
+                    element.innerHTML = `<div class="CVOL_textElement">${el.name}</div><div class="CVOL_actionsContainer"><div class="CVOL_actionBtn CVOL_minusBtn" onclick='removeQtt("${el.id}", ${el.vol}, "${el.name})'><svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg"><path d="M416 182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z" fill="black"/></svg></div><div class="CVOL_quantity" id="quantity__${el.id}">0</div><div class="CVOL_actionBtn CVOL_plusBtn" onclick='addQtt("${el.id}", ${el.vol}, "${el.name}")'><svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg"><path d="M416 182H272V56C272 40.5387 257.67 28 240 28H208C190.33 28 176 40.5387 176 56V182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H176V392C176 407.461 190.33 420 208 420H240C257.67 420 272 407.461 272 392V266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z" fill="black"/></svg></div></div>`
+
+                    objectsContainer.appendChild(element)
+                })
+            }
+
+            function syntaxChecking(qtt) {
+                console.log(qtt)
+                if (qtt <= 2) {
+                    switch (qtt) {
+                        case 0:
+                            listTitle.innerText = 'Votre liste est vide'
+                            break;
+                        case 1:
+                            listTitle.innerText = 'Votre liste contient :'
+                            textObjectCount.innerText = 'Objet'
+                            break;
+                        case 2:
+                            textObjectCount.innerText = 'Objets'
+                            break;
+                    }
+                }
+            }
+
+            function addQtt(id, vol, name) {
+                let qtt = document.getElementById('quantity__'+id)
+                let newQtt = parseFloat(qtt.textContent) + 1
+                qtt.innerText = newQtt
+
+                totalObjectsDisplay.innerText = parseFloat(totalObjectsDisplay.textContent) + 1
+                totalVolDisplay.innerText = parseFloat(totalVolDisplay.textContent) + vol
+
+                syntaxChecking(parseFloat(totalObjectsDisplay.textContent))
+
+                let liElement = listOfObjects.querySelector(`li[id="li_${id}"]`)
+                if (liElement) {
+                    liElement.innerText = newQtt + ' ' + name
+                } else {
+                    liElement = document.createElement('li')
+                    liElement.id = "li_"+id
+                    liElement.innerText = newQtt + ' ' + name
+                    listOfObjects.appendChild(liElement)
+                }
+            }
+            
+            function removeQtt(id, vol, name) {
+                let qtt = document.getElementById('quantity__'+id)
+                let newQtt = parseFloat(qtt.textContent) - 1
+                if (newQtt >= 0) {
+                    qtt.innerText = newQtt
+
+                    totalObjectsDisplay.innerText = parseFloat(totalObjectsDisplay.textContent) - 1
+                    totalVolDisplay.innerText = parseFloat(totalVolDisplay.textContent) - vol
+                    
+                    let liElement = listOfObjects.querySelector(`li[id="li_${id}"]`)
+                    if (liElement) {
+                        if (newQtt === 0) {
+                            listOfObjects.removeChild(liElement)
+                        } else {
+                            liElement.innerText = newQtt + ' ' + name
+                        }
+                    } else if (newQtt > 0) {
+                        liElement = document.createElement('li')
+                        liElement.id = "li_"+id
+                        liElement.innerText = newQtt + ' ' + name
+                        listOfObjects.appendChild(liElement)
+                    }
+                }
+            }
+
+            function Add(name, quantity, volume, id) {
+                    var currentVolume = $("#total").html(),
+                        currentTotal = $("#totalQuantity").html();
+                    currentVolume = parseFloat(currentVolume) + (quantity * volume);
+                    currentTotal = parseFloat(currentTotal) + quantity;
+
+                    //Ajoute dans la quantité si existe
+                    var currentQuantity = parseFloat($("#categoryQuantity_" + id).html());
+                    currentQuantity = currentQuantity + 1;
+                    $("#categoryQuantity_" + id).html(currentQuantity);
+
+
+                    //Ajoute dans la liste de droite
+                    if ($("#listFurnitureItem_" + id).length) {
+                        $("#listFurnitureItem_" + id).find("#hiddenVolumeTotal_" + id).val(currentQuantity * volume);
+                        $("#listFurnitureItem_" + id).find("span").html(currentQuantity + " <span class='nameObjectList'>" + name + ", </span>");
+                        $("#listFurnitureItem_" + id + " input:first-child").attr('data-quantity', currentQuantity);
+                    } else {
+
+                        var currentItemVolume = currentQuantity * volume;
+                        $("#listFurniture").append("<li id='listFurnitureItem_" + id + "'><input type='hidden' id='hiddenVolumeTotal_" + id + "' data-quantity='" + currentQuantity + "' value='" + currentItemVolume + "'/><span>" + currentQuantity + " <span class='nameObjectList'>" + name + ", </span></span><input type='button' class='delett " + id + "' value='x' /></li>");
+                    }
+
+                    $("#total").html(currentVolume.toFixed(2));
+                    $("#totalQuantity").html(currentTotal);
+                }
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var otherId = 99;
+
+                document.querySelectorAll('.more').forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        var elem = button.closest('.element');
+                        var te = elem.getAttribute('data-volume');
+                        var ti = button.getAttribute('data-i');
+                        var ss = elem.querySelector(".texte-objet").textContent;
+                        Add(ss, 1, te, ti);
+                    });
+                });
+
+                document.querySelectorAll('.less').forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        var elem = button.closest('.element');
+                        var te = elem.getAttribute('data-volume');
+                        var ti = button.getAttribute('data-i');
+                        var ss = elem.querySelector(".texte-objet").textContent;
+                        Remove(ss, 1, te, ti);
+                    });
+                });
+
+                document.addEventListener('click', function (event) {
+                    if (event.target.matches('.delett')) {
+                        var dd = event.target.classList[event.target.classList.length - 1];
+                        RemoveAll(dd);
+                    }
+                });
+
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
