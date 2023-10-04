@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --principal_color: #6dab3c;
+            --secondary_color: #e2e6df;
+            --nbElementPerCol: 6;
+            --fontFamily: Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+        }
+
+        #CVOL_widgetContainer {
+            display: flex;
+            width: 100%;
+            gap: 16px;
+        }
+
+        #CVOL_recapContainer {
+            width: 20%;
+            min-width: 240px;
+            max-width: 380px;
+            background-color: var(--secondary_color);
+        }
+
+        #CVOL_objectsContainer {
+            display: grid;
+            grid-template-columns: repeat(var(--nbElementPerCol), 1fr);
+            gap: 4px;
+            flex-grow: 1;
+        }
+
+        .CVOL_element {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--secondary_color);
+            align-items: center;
+            justify-content: flex-end;
+            font-family: var(--fontFamily);
+            padding: 88px 8px 8px;
+            background-position: top 12px center;
+            background-repeat: no-repeat;
+            background-size: 64px;
+            gap: 8px;
+        }
+
+        .CVOL_textElement {
+            font-family: var(--fontFamily);
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .CVOL_actionsContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .CVOL_actionsContainer .CVOL_quantity {
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            height: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 26px;
+            background-color: transparent;
+            border-color: var(--btn-text-color);
+            border-width: 1px;
+            color: var(--btn-text-color);
+        }
+        .CVOL_actionsContainer .CVOL_actionBtn {
+            background-color: var(--btn-bg-color);
+            border-color: var(--btn-border-t-color) var(--btn-border-r-color) var(--btn-border-b-color) var(--btn-border-l-color);
+            border-radius: var(--btn-border-radius);
+            border-bottom-left-radius: var(--btn-border-bl-radius);
+            border-bottom-right-radius: var(--btn-border-br-radius);
+            border-top-left-radius: var(--btn-border-tl-radius);
+            border-top-right-radius: var(--btn-border-tr-radius);
+            border-width: var(--btn-border-t-width) var(--btn-border-r-width) var(--btn-border-b-width) var(--btn-border-l-width);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 26px;
+            padding: 6px;
+            cursor: pointer;
+        }
+        .CVOL_actionsContainer .CVOL_actionBtn:hover {
+            background-color: var(--btn-hover-bg);
+        }
+        .CVOL_actionsContainer .CVOL_actionBtn :is(svg, svg path) {
+            fill: var(--btn-text-color);
+        }
+        .CVOL_actionsContainer .CVOL_actionBtn:hover :is(svg, svg path) {
+            fill: var(--btn-hover-text-color);
+        }
+
+        pre {
+            width: 60%;
+            height: 320px;
+            overflow: auto;
+            border: solid grey 1px;
+            padding: 8px;
+            text-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="copyButton">Copier le code</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
