@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        pre {
+            width: 60%;
+            height: 320px;
+            overflow: auto;
+            border: solid grey 1px;
+            padding: 8px;
+            text-wrap: wrap;
+        }
+
         :root {
-            --principal_color: #6dab3c;
-            --secondary_color: #e2e6df;
+            --color_1: #090;
+            --color_4: #fff;
             --nbElementPerCol: 6;
-            --fontFamily: Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+            --fontFamily: Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
         }
 
         #CVOL_widgetContainer {
@@ -19,24 +28,203 @@
             gap: 16px;
         }
 
-        #CVOL_recapContainer {
-            width: 20%;
-            min-width: 240px;
-            max-width: 380px;
-            background-color: var(--secondary_color);
+        #CVOL_objectsTabsContainer {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
         }
 
-        #CVOL_objectsContainer {
+        #CVOL_objectsTabsListContainer {
+            display: flex;
+            background-color: #ECEDEA;
+            width: fit-content;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .CVOL_objectsTabListContainer {
+            padding: 8px 12px;
+            
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            
+            font-family: var(--fontFamily);
+
+            cursor: pointer;
+        }
+        .CVOL_objectsTabListContainer.CVOL_tabActiv {
+            border-bottom: 3px solid var(--color_1);
+        }
+
+        
+        #CVOL_containerRecapCard {
+            width: 20%;
+            min-width: 160px;
+            max-width: 380px;
+            background-color: #ECEDEA;
+            padding: 12px 12px;
+            display: flex;
+
+            border-radius: 5px;
+        }
+
+        #CVOL_recapContainer {
+            width: 100%;
+            display: flex;
+            padding: 6px 8px 12px 8px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            height: fit-content;
+
+            position: sticky;
+            position: -webkit-sticky;
+            top: 12px;
+
+            border-radius: 2px;
+            background-color: var(--color_4);
+
+            font-family: var(--fontFamily);
+        }
+
+        #CVOL_allInfoListContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 21px;
+            align-self: stretch;
+        }
+
+        #CVOL_infoCountContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+
+        #CVOL_listTitle {
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #CVOL_totalObjectContainer {
+            display: flex;
+            padding: 0px 8px;
+            align-items: center;
+            gap: 0.3em;
+            align-self: stretch;
+
+            color: #000;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #CVOL_listOfObjects {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 8px 2px;
+            background: #ECEDEA;
+
+            color: #000;
+            font-size: 14px;
+            white-space: wrap;
+        }
+        
+        #CVOL_listOfObjects li {
+            padding-left: 8px;
+            white-space: wrap;
+        }
+
+        #CVOL_totalVolInfoContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            align-self: stretch;
+        }
+
+        #CVOL_totalVolText {
+            display: flex;
+            padding: 0px 8px;
+            align-items: center;
+            align-self: stretch;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        #CVOL_totalVolContainer {
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 2px;
+            border: 1px solid var(--color_1);
+            background: var(--color_1);
+        }
+
+        #CVOL_infoTotalVol {
+            display: flex;
+            padding: 0px 8px 0px 4px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex: 1 0 0;
+            align-self: stretch;
+        }
+
+        #CVOL_infoTotalVol #CVOL_textVolContainer {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            color: var(--color_4);
+            text-align: right;
+            font-weight: 700;
+        }
+
+        #CVOL_mcubeLabel {
+            display: flex;
+            width: 32px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            background: var(--color_4);
+
+            color: #000;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+
+
+
+
+        .CVOL_objectsContainer {
             display: grid;
             grid-template-columns: repeat(var(--nbElementPerCol), 1fr);
-            gap: 4px;
+            gap: 24px;
+            padding: 16px;
             flex-grow: 1;
+            background: #ECEDEA;
         }
 
         .CVOL_element {
             display: flex;
             flex-direction: column;
-            background-color: var(--secondary_color);
             align-items: center;
             justify-content: flex-end;
             font-family: var(--fontFamily);
@@ -45,11 +233,19 @@
             background-repeat: no-repeat;
             background-size: 64px;
             gap: 8px;
+            border-radius: 2px;
+            background-color: var(--color_4);
         }
 
         .CVOL_textElement {
             font-family: var(--fontFamily);
             text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #000;
+
             flex-grow: 1;
             display: flex;
             justify-content: center;
@@ -59,58 +255,54 @@
         .CVOL_actionsContainer {
             width: 100%;
             display: flex;
-            justify-content: center;
+            height: 32px;
             align-items: center;
-        }
-        .CVOL_actionsContainer .CVOL_quantity {
-            flex-grow: 1;
-            width: 100%;
-            text-align: center;
-            height: 26px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            line-height: 26px;
-            background-color: transparent;
-            border-color: var(--btn-text-color);
-            border-width: 1px;
-            color: var(--btn-text-color);
-        }
-        .CVOL_actionsContainer .CVOL_actionBtn {
-            background-color: var(--btn-bg-color);
-            border-color: var(--btn-border-t-color) var(--btn-border-r-color) var(--btn-border-b-color) var(--btn-border-l-color);
-            border-radius: var(--btn-border-radius);
-            border-bottom-left-radius: var(--btn-border-bl-radius);
-            border-bottom-right-radius: var(--btn-border-br-radius);
-            border-top-left-radius: var(--btn-border-tl-radius);
-            border-top-right-radius: var(--btn-border-tr-radius);
-            border-width: var(--btn-border-t-width) var(--btn-border-r-width) var(--btn-border-b-width) var(--btn-border-l-width);
+            align-self: stretch;
 
+            border-radius: 2px;
+            border: 1px solid #BFBFBF;
+            background-color: var(--color_4);
+        }
+
+        .CVOL_actionsContainer .CVOL_quantity {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 10px;
+            flex: 1 0 0;
+            align-self: stretch;
+            border-right: 1px solid #BFBFBF;
+            border-left: 1px solid #BFBFBF;
+        }
+
+        .CVOL_actionsContainer .CVOL_actionBtn {
+            display: flex;
             width: 32px;
-            height: 26px;
-            padding: 6px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+
             cursor: pointer;
         }
+
+        .CVOL_actionsContainer .CVOL_actionBtn svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--color_1);
+        }
+
         .CVOL_actionsContainer .CVOL_actionBtn:hover {
             background-color: var(--btn-hover-bg);
         }
+
         .CVOL_actionsContainer .CVOL_actionBtn :is(svg, svg path) {
-            fill: var(--btn-text-color);
-        }
-        .CVOL_actionsContainer .CVOL_actionBtn:hover :is(svg, svg path) {
-            fill: var(--btn-hover-text-color);
+            fill: var(--color_1);
         }
 
-        pre {
-            width: 60%;
-            height: 320px;
-            overflow: auto;
-            border: solid grey 1px;
-            padding: 8px;
-            text-wrap: wrap;
+        .CVOL_actionsContainer .CVOL_actionBtn:hover :is(svg, svg path) {
+            fill: var(--btn-hover-text-color);
         }
     </style>
 </head>
@@ -118,6 +310,76 @@
 <body>
     <button id="copyButton">Copier le code</button>
 
+    <pre id="preCode">
+
+    </pre>
+
+    <!-- <div style="width: fit-content; transform-origin: top left; background-color: #ECEDEA; padding: 16px; display: flex; gap: 8px;">
+        <div style="max-width: 320px; transform-origin: top left; background-color: #ECEDEA; display: flex; gap: 8px;">
+            <div class="CVOL_element" style="background-image: url('tN1oJp5.png');">
+                <div class="CVOL_textElement">Réfrégirateur américain</div>
+                <div class="CVOL_actionsContainer">
+                    <div class="CVOL_actionBtn CVOL_minusBtn" onclick="removeQtt('frigo-am', 2, 'Réfrégirateur américain')">
+                        <svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z"
+                                fill="black"></path>
+                        </svg>
+                    </div>
+                    <div class="CVOL_quantity" id="quantity__frigo-am">0</div>
+                    <div class="CVOL_actionBtn CVOL_plusBtn" onclick="addQtt('frigo-am', 2, 'Réfrégirateur américain')"><svg
+                            viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 182H272V56C272 40.5387 257.67 28 240 28H208C190.33 28 176 40.5387 176 56V182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H176V392C176 407.461 190.33 420 208 420H240C257.67 420 272 407.461 272 392V266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z"
+                                fill="black"></path>
+                        </svg></div>
+                </div>
+            </div>
+            <div class="CVOL_element" style="background-image: url('tN1oJp5.png');">
+                <div class="CVOL_textElement">Réfrégirateur double porte</div>
+                <div class="CVOL_actionsContainer">
+                    <div class="CVOL_actionBtn CVOL_minusBtn" onclick="removeQtt('frigo-dp', 3, 'Réfrégirateur double porte')">
+                        <svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z"
+                                fill="black"></path>
+                        </svg>
+                    </div>
+                    <div class="CVOL_quantity" id="quantity__frigo-dp">0</div>
+                    <div class="CVOL_actionBtn CVOL_plusBtn" onclick="addQtt('frigo-dp', 3, 'Réfrégirateur double porte')"><svg
+                            viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M416 182H272V56C272 40.5387 257.67 28 240 28H208C190.33 28 176 40.5387 176 56V182H32C14.33 182 0 194.539 0 210V238C0 253.461 14.33 266 32 266H176V392C176 407.461 190.33 420 208 420H240C257.67 420 272 407.461 272 392V266H416C433.67 266 448 253.461 448 238V210C448 194.539 433.67 182 416 182Z"
+                                fill="black"></path>
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+        <div id="CVOL_recapContainer">
+            <div id="CVOL_allInfoListContainer">
+                <div id="CVOL_infoCountContainer">
+                    <div id="CVOL_listTitle">Votre liste est vide</div>
+                    <div id="CVOL_totalObjectContainer"><span id="CVOL_totalObject">0</span> <span
+                            id="CVOL_textObjectCount">Objet</span></div>
+                </div>
+                <ul id="CVOL_listOfObjects"></ul>
+            </div>
+            <div id="CVOL_totalVolInfoContainer">
+                <div id="CVOL_totalVolText">Avec un total de</div>
+                <div id="CVOL_totalVolContainer">
+                    <div id="CVOL_infoTotalVol">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+                            <path
+                                d="M18.3487 5.92637L11.13 1.97656C10.9371 1.86999 10.7204 1.81409 10.5 1.81409C10.2796 1.81409 10.0629 1.86999 9.87 1.97656L2.65125 5.92801C2.4451 6.0408 2.27301 6.20688 2.15295 6.4089C2.0329 6.61091 1.96928 6.84145 1.96875 7.07645V14.9219C1.96928 15.1569 2.0329 15.3875 2.15295 15.5895C2.27301 15.7915 2.4451 15.9576 2.65125 16.0704L9.87 20.0218C10.0629 20.1284 10.2796 20.1843 10.5 20.1843C10.7204 20.1843 10.9371 20.1284 11.13 20.0218L18.3487 16.0704C18.5549 15.9576 18.727 15.7915 18.847 15.5895C18.9671 15.3875 19.0307 15.1569 19.0312 14.9219V7.07727C19.0312 6.84185 18.9678 6.6108 18.8477 6.40831C18.7276 6.20583 18.5553 6.03936 18.3487 5.92637ZM10.5 3.125L17.0912 6.73438L14.6483 8.07066L8.05711 4.46129L10.5 3.125ZM10.5 10.3438L3.90879 6.73438L6.69047 5.21105L13.2817 8.82043L10.5 10.3438ZM17.7188 14.9252L11.1562 18.5173V11.4782L13.7812 10.0419V12.9688C13.7812 13.1428 13.8504 13.3097 13.9735 13.4328C14.0965 13.5559 14.2635 13.625 14.4375 13.625C14.6115 13.625 14.7785 13.5559 14.9015 13.4328C15.0246 13.3097 15.0938 13.1428 15.0938 12.9688V9.32328L17.7188 7.88691V14.9219V14.9252Z"
+                                fill="black" />
+                        </svg>
+                        <div id="CVOL_textVolContainer">~ <span id="CVOL_totalVol">0</span></div>
+                    </div>
+                    <div id="CVOL_mcubeLabel">m³</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <script src="script.js"></script>
 </body>
