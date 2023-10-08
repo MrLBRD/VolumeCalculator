@@ -24,6 +24,7 @@
 
         #CVOL_widgetContainer {
             display: flex;
+            flex-direction: column;
             width: 100%;
             gap: 16px;
         }
@@ -31,7 +32,50 @@
         #CVOL_objectsTabsContainer {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
+        }
+
+        #CVOL_containerRecapCard {
+            width: 100%;
+            min-width: 160px;
+            background-color: #ECEDEA;
+            padding: 12px 12px;
+            display: flex;
+
+            border-radius: 5px;
+        }
+
+        
+        @media screen and (min-width: 630px) {
+            #CVOL_widgetContainer {
+                flex-direction: row;
+            }
+            #CVOL_objectsTabsContainer {
+                flex-grow: 1;
+            }
+            #CVOL_containerRecapCard {
+                width: 30%;
+            }
+        }
+        
+        @media screen and (min-width: 800px) {
+            #CVOL_objectsTabsContainer {
+                flex-grow: 1;
+            }
+            #CVOL_containerRecapCard {
+                width: 30%;
+            }
+        }
+        
+        @media screen and (min-width: 1040px) {
+            #CVOL_objectsTabsContainer {
+                width: 80%;
+                flex-grow: 1;
+            }
+            #CVOL_containerRecapCard {
+                width: 20%;
+                max-width: 380px;
+            }
         }
 
         #CVOL_objectsTabsListContainer {
@@ -55,18 +99,6 @@
         }
         .CVOL_objectsTabListContainer.CVOL_tabActiv {
             border-bottom: 3px solid var(--color_1);
-        }
-
-        
-        #CVOL_containerRecapCard {
-            width: 20%;
-            min-width: 160px;
-            max-width: 380px;
-            background-color: #ECEDEA;
-            padding: 12px 12px;
-            display: flex;
-
-            border-radius: 5px;
         }
 
         #CVOL_recapContainer {
@@ -215,11 +247,35 @@
 
         .CVOL_objectsContainer {
             display: grid;
-            grid-template-columns: repeat(var(--nbElementPerCol), 1fr);
-            gap: 24px;
-            padding: 16px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 8px;
             flex-grow: 1;
             background: #ECEDEA;
+        }
+        
+        @media screen and (min-width: 630px) {
+            .CVOL_objectsContainer {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                padding: 12px;
+            }
+        }
+        
+        @media screen and (min-width: 800px) {
+            .CVOL_objectsContainer {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
+                padding: 12px;
+            }
+        }
+
+        @media screen and (min-width: 1040px) {
+            .CVOL_objectsContainer {
+                grid-template-columns: repeat(var(--nbElementPerCol), 1fr);
+                gap: 24px;
+                padding: 16px;
+            }
         }
 
         .CVOL_element {
