@@ -754,7 +754,7 @@ function addQtt(id, vol, name) {
     qtt.innerText = newQtt
 
     totalObjectsDisplay.innerText = parseFloat(totalObjectsDisplay.textContent) + 1
-    totalVolDisplay.innerText = parseFloat(totalVolDisplay.textContent) + vol
+    totalVolDisplay.innerText = (parseFloat(totalVolDisplay.textContent) + vol).toFixed(2)
 
     syntaxChecking(parseFloat(totalObjectsDisplay.textContent))
 
@@ -776,7 +776,7 @@ function removeQtt(id, vol, name) {
         qtt.innerText = newQtt
 
         totalObjectsDisplay.innerText = parseFloat(totalObjectsDisplay.textContent) - 1
-        totalVolDisplay.innerText = parseFloat(totalVolDisplay.textContent) - vol
+        totalVolDisplay.innerText = (parseFloat(totalVolDisplay.textContent) - vol).toFixed(2)
 
         let liElement = listOfObjects.querySelector(`li[id="li_${id}"]`)
         if (liElement) {
@@ -801,63 +801,3 @@ document.addEventListener('DOMContentLoaded', function () {
     listTitle = document.getElementById('CVOL_listTitle')
     listOfObjects = document.getElementById('CVOL_listOfObjects')
 })
-
-function Add(name, quantity, volume, id) {
-    var currentVolume = $("#total").html(),
-        currentTotal = $("#totalQuantity").html();
-    currentVolume = parseFloat(currentVolume) + (quantity * volume);
-    currentTotal = parseFloat(currentTotal) + quantity;
-
-    //Ajoute dans la quantité si existe
-    var currentQuantity = parseFloat($("#categoryQuantity_" + id).html());
-    currentQuantity = currentQuantity + 1;
-    $("#categoryQuantity_" + id).html(currentQuantity);
-
-
-    //Ajoute dans la liste de droite
-    if ($("#listFurnitureItem_" + id).length) {
-        $("#listFurnitureItem_" + id).find("#hiddenVolumeTotal_" + id).val(currentQuantity * volume);
-        $("#listFurnitureItem_" + id).find("span").html(currentQuantity + " <span class='nameObjectList'>" + name + ", </span>");
-        $("#listFurnitureItem_" + id + " input:first-child").attr('data-quantity', currentQuantity);
-    } else {
-
-        var currentItemVolume = currentQuantity * volume;
-        $("#listFurniture").append("<li id='listFurnitureItem_" + id + "'><input type='hidden' id='hiddenVolumeTotal_" + id + "' data-quantity='" + currentQuantity + "' value='" + currentItemVolume + "'/><span>" + currentQuantity + " <span class='nameObjectList'>" + name + ", </span></span><input type='button' class='delett " + id + "' value='x' /></li>");
-    }
-
-    $("#total").html(currentVolume.toFixed(2));
-    $("#totalQuantity").html(currentTotal);
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var otherId = 99;
-
-    document.querySelectorAll('.more').forEach(function (button) {
-        button.addEventListener('click', function () {
-            var elem = button.closest('.element');
-            var te = elem.getAttribute('data-volume');
-            var ti = button.getAttribute('data-i');
-            var ss = elem.querySelector(".texte-objet").textContent;
-            Add(ss, 1, te, ti);
-        });
-    });
-
-    document.querySelectorAll('.less').forEach(function (button) {
-        button.addEventListener('click', function () {
-            var elem = button.closest('.element');
-            var te = elem.getAttribute('data-volume');
-            var ti = button.getAttribute('data-i');
-            var ss = elem.querySelector(".texte-objet").textContent;
-            Remove(ss, 1, te, ti);
-        });
-    });
-
-    document.addEventListener('click', function (event) {
-        if (event.target.matches('.delett')) {
-            var dd = event.target.classList[event.target.classList.length - 1];
-            RemoveAll(dd);
-        }
-    });
-
-});
